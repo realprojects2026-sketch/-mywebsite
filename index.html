@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<title>JARVIS</title>
+<style>
+body{
+  background:black;
+  color:cyan;
+  font-family:monospace;
+  text-align:center;
+  margin-top:100px;
+}
+button{
+  padding:20px;
+  font-size:20px;
+  background:cyan;
+  border:none;
+}
+</style>
+</head>
+<body>
+
+<h1>JARVIS ONLINE</h1>
+<button onclick="speak()">Μίλα</button>
+
+<script>
+function speak(){
+  let msg = new SpeechSynthesisUtterance("Jarvis online");
+  speechSynthesis.speak(msg);
+}
+</script>
+
+</body>
+</html>
